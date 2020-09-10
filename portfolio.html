@@ -3,19 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
     <title>Портфолио</title>
   </head>
   <body>
@@ -23,9 +17,7 @@
       <nav>
         <div class="container">
           <div class="nav-main">
-            <a href="./index.html" class="logo reset-link"
-              ><span class="logo-color">Web</span> studio</a
-            >
+            <a href="./index.html" class="logo reset-link"><span class="logo-color">Web</span> studio</a>
             <ul class="ul reset-ul">
               <li class="nav-items">
                 <a href="" class="link reset-link">Студия</a>
@@ -38,15 +30,18 @@
               </li>
             </ul>
             <ul class="ul-contact reset-ul">
-              <li>
-                <a href="mailto:info@devstudio.com" class="contacts reset-link"
-                  >info@devstudio.com</a
-                >
+              <li class="contacts-li">
+                <a href="mailto:info@devstudio.com" class="contacts reset-link">
+                  <svg class="contacts-svg" width="16px" height="12px">
+                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                  </svg>info@devstudio.com</a>
               </li>
               <li class="contacts-li">
-                <a href="tel:+380961111111" class="contacts reset-link"
-                  >+38 096 111 11 11</a
-                >
+                <a href="tel:+380961111111" class="contacts reset-link"><svg class="contacts-svg" width="16px"
+                    height="12px">
+                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>+38 096 111 11 11
+                </a>
               </li>
             </ul>
           </div>
