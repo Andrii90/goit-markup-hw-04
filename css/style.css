@@ -454,8 +454,8 @@ button {
   background: #f5f4fa;
   border-radius: 4px;
 }
-.feautures-icon:hover,
-.feautures-icon:focus {
+.feautures-icon-svg:hover,
+.feautures-icon-svg:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
