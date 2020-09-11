@@ -1,167 +1,295 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/active-script.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
-  <link rel="stylesheet" href="reset.css" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <body>
+    <!-- Шапка сайта  -->
+    <header class="page-header">
+      <nav>
+        <div class="container main-cont">
+          <a href="./index.html" title="Logo" class="logo reset-link" lang="en"
+            ><span class="logo-color">Web</span> Studio</a
+          >
 
-  <title>Портфолио</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="container">
-        <div class="nav-main">
-          <a href="./index.html" class="logo reset-link"><span class="logo-color">Web</span> studio</a>
-          <ul class="ul reset-ul">
-            <li class="nav-items">
-              <a href="" class="link reset-link">Студия</a>
+          <ul class="menu reset-ul">
+            <li class="items">
+              <a href="./index.html" class="menu-link reset-link">Студия</a>
             </li>
-            <li class="nav-items">
-              <a href="./portfolio.html" class="link reset-link">Портфолио</a>
+            <li class="items">
+              <a href="./portfolio.html" class="menu-link reset-link"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav-items">
-              <a href="" class="link reset-link">Контакты</a>
+            <li class="items">
+              <a href="./" class="menu-link reset-link">Контакты</a>
             </li>
           </ul>
-          <ul class="ul-contact reset-ul">
-            <li class="contacts-li">
-              <a href="mailto:info@devstudio.com" class="contacts reset-link">
-                <svg class="contacts-svg" width="16px" height="12px">
-                  <use href="./images/symbol-defs.svg#icon-email"></use>
-                </svg>info@devstudio.com</a>
+
+          <ul class="contact reset-ul">
+            <li class="items">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contact-link reset-link"
+                lang="en"
+              >
+                <svg class="icon-envelope">
+                  <use href="./images/sprite.svg#icon-envelope"></use></svg
+                ><span>info@devstudio.com</span></a
+              >
             </li>
-            <li class="contacts-li">
-              <a href="tel:+380961111111" class="contacts reset-link"><svg class="contacts-svg" width="16px"
-                  height="12px">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg>+38 096 111 11 11
+            <li class="items">
+              <a href="tel:+380961111111" class="contact-link reset-link">
+                <svg class="icon-smartphone">
+                  <use href="./images/sprite.svg#icon-smartphone"></use></svg
+                ><span>+38 096 111 11 11</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="portfolio">
+      <div class="container">
+        <!-- Придумал заголовок H1  -->
+        <h1 class="portfolio-title reset visually-hidden">Наши работы</h1>
+
+        <nav>
+          <ul class="menu-filter reset-ul">
+            <li class="items">
+              <button type="button" class="menu-button reset-button">
+                Все
+              </button>
+            </li>
+            <li class="items">
+              <button type="button" class="menu-button reset-button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="items">
+              <button type="button" class="menu-button reset-button">
+                Приложения
+              </button>
+            </li>
+            <li class="items">
+              <button type="button" class="menu-button reset-button">
+                Дизайн
+              </button>
+            </li>
+            <li class="items">
+              <button type="button" class="menu-button reset-button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="project">
+          <ul class="project-list reset-ul">
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img src="./images/tehno.jpg" width="370" alt="Технокряк" />
+                <div class="project-block">
+                  <h3 class="project-title reset">Технокряк</h3>
+                  <p class="project-text reset">Веб-сайт</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+            <li class="project-items">
+              <!-- По макету я так понял, что при наведении на курсора на весь блок  -->
+              <a href="" class="project-items-link reset-link">
+                <img src="./images/poster.jpg" width="370" alt="Постер" />
+                <div class="project-block">
+                  <h3 class="project-title reset">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="project-text reset">Дизайн</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img
+                  src="./images/restoran.jpg"
+                  width="370"
+                  alt="Ресторан морепродукты"
+                />
+                <div class="project-block">
+                  <h3 class="project-title reset">Ресторан Seafood</h3>
+                  <p class="project-text reset">Приложение</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img
+                  src="./images/project-prime.jpg"
+                  width="370"
+                  alt="Проект Прайм"
+                />
+                <div class="project-block">
+                  <h3 class="project-title reset">Проект Prime</h3>
+                  <p class="project-text reset">Маркетинг</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img
+                  src="./images/project-box.jpg"
+                  width="370"
+                  alt="Проект ящики"
+                />
+                <div class="project-block">
+                  <h3 class="project-title reset">Проект Boxes</h3>
+                  <p class="project-text reset">Приложение</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img
+                  src="./images/inspiration.jpg"
+                  width="370"
+                  alt="Стремление не имеет границ"
+                />
+                <div class="project-block">
+                  <h3 class="project-title reset" lang="en">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="project-text reset">Веб-сайт</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img src="./images/izdanie.jpg" width="370" alt="Издание" />
+                <div class="project-block">
+                  <h3 class="project-title reset" lang="en">
+                    Издание Limited Edition
+                  </h3>
+                  <p class="project-text reset">Дизайн</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img
+                  src="./images/project-lab.jpg"
+                  width="370"
+                  alt="Проект лаб"
+                />
+                <div class="project-block">
+                  <h3 class="project-title reset">Проект LAB</h3>
+                  <p class="project-text reset">Маркетинг</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
+              </a>
+            </li>
+            <li class="project-items">
+              <a href="" class="project-items-link reset-link"
+                ><img
+                  src="./images/growing.jpg"
+                  width="370"
+                  alt="Растущий бизнес"
+                />
+                <div class="project-block">
+                  <h3 class="project-title reset" lang="en">
+                    Growing Business
+                  </h3>
+                  <p class="project-text reset">Приложение</p>
+                  <!-- <p class="project-desc reset">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p> -->
+                </div>
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-  </header>
-  <section>
-    <main>
-      <div class="container-portfolio">
-        <h1 class="visually-hidden">Наши работы</h1>
-        <ul class="ul-portfolio reset-ul">
-          <li class="list-portfolio">
-            <a href="" class="link-p reset-link">Все</a>
-          </li>
-          <li class="list-portfolio">
-            <a href="" class="link-p reset-link">Веб сайты</a>
-          </li>
-          <li class="list-portfolio">
-            <a href="" class="link-p reset-link">Приложения</a>
-          </li>
-          <li class="list-portfolio">
-            <a href="" class="link-p reset-link">Дизайн</a>
-          </li>
-          <li class="list-portfolio">
-            <a href="" class="link-p reset-link">Маркетинг</a>
-          </li>
-        </ul>
-        <ul class="work reset-ul">
-          <li class="work-item">
-            <img src="./images/img1.jpg" alt="Технокряк" width="370" />
-            <div class="marg">
-              <h3 class="black">Технокряк</h3>
-              <h4 class="work-text">Веб-сайт</h4>
-            </div>
-          </li>
-          <li class="work-item">
-            <img src="./images/img2.jpg" alt="Баскетбол" width="370" />
-            <div class="marg">
-              <h3 class="black">Постер New Orlean vs Golden Star</h3>
-              <h4 class="work-text">Дизайн</h4>
-            </div>
-          </li>
-          <li class="work-item">
-            <img src="./images/img3.jpg" alt="Ресторан" width="370" />
-            <div class="marg">
-              <h3 class="black">Ресторан Seafood</h3>
-              <h4 class="work-text">Приложение</h4>
-            </div>
-          </li>
-          <li class="work-item">
-            <img src="./images/img4.jpg" alt="Наушники" width="370" />
-            <div class="marg">
-              <h3 class="black">Проект Prime</h3>
-              <h4 class="work-text">Маркетинг</h4>
-            </div>
-          </li>
-          <li class="work-item">
-            <img src="./images/img5.jpg" alt="Коробки" width="370" />
-            <div class="marg">
-              <h3 class="black">Проект Boxes</h3>
-              <h4 class="work-text">Приложение</h4>
-              <div />
-          </li>
-          <li class="work-item">
-            <img src="./images/img6.jpg" alt="Монитор" width="370" />
-            <div class="marg">
-              <h3 class="black">Inspiration has no Borders</h3>
-              <h4 class="work-text">Веб-сайт</h4>
-              <div />
-          </li>
-          <li class="work-item">
-            <img src="./images/img7.jpg" alt="Книга" width="370" />
-            <div class="marg">
-              <h3 class="black">Издание Limited Edition</h3>
-              <h4 class="work-text">Дизайн</h4>
-              <div />
-          </li>
-          <li class="work-item">
-            <img src="./images/img8.jpg" alt="Лейбл" width="370" />
-            <div class="marg">
-              <h3 class="black">Проект LAB</h3>
-              <h4 class="work-text">Маркетинг</h4>
-              <div />
-          </li>
-          <li class="work-item">
-            <img src="./images/img9.jpg" alt="Ноутбук" width="370" />
-            <div class="marg">
-              <h3 class="black">Growing Business</h3>
-              <h4 class="work-text">Приложение</h4>
-              <div />
-          </li>
-        </ul>
-  </section>
-  </div>
-  </main>
-  <footer class="podval">
-    <div class="container">
-      <div class="podval-logo">
-        <a href="./index.html" class="podval-logo reset-link"><span class="logo-color">Web</span> studio</a>
+    </section>
+    <footer>
+      <div class="footer">
+        <div>
+          <a href="./index.html" class="logo-footer reset-link" lang="en"
+            ><span class="logo-color">Web</span> Studio</a
+          >
+          <address>
+            <ul class="reset-ul">
+              <li class="contact-text">г. Киев, пр-т Леси Украинки, 26</li>
+              <li class="marg">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact-link reset-link"
+                  lang="en"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="marg">
+                <a href="tel:+380961111111" class="contact-link reset-link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social">
+          <b class="social-title reset">присоединяйтесь</b>
+          <ul class="social-list reset-ul">
+            <li class="items">
+              <a href="" class="social-link reset-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="items">
+              <a href="" class="social-link reset-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="items">
+              <a href="" class="social-link reset-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="items">
+              <a href="" class="social-link reset-link">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="podval-container">
-        <ul class="podval-contacts reset-ul">
-          <li>
-            <address class="podval-addres reset-link">
-              г. Киев, пр-т Леси Украинки, 26
-            </address>
-          </li>
-          <li>
-            <a href="mailto:info@example.com" class="podval-list reset-link">info@example.com</a>
-          </li>
-          <li>
-            <a href="tel:+380991111111" class="podval-list reset-link">+38 099 111 11 11</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
